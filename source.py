@@ -1,17 +1,17 @@
 __author__ = 'leeh7'
 import random
 
-def diceRoller(die_size, rolls):
+def diceRoller(dieSize, rolls):
 
     results = 0
-    dice_sum = 0
+    diceSum = 0
 
     for i in range(0,rolls):
-        results = random.randint(1,die_size)
+        results = random.randint(1,dieSize)
         print("Die %d rolled %d." % (i+1,results))
-        dice_sum += results
+        diceSum += results
 
-    print("Total of %d dice rolls is: %d" % (rolls,dice_sum))
+    print("Total of %d dice rolls is: %d" % (rolls,diceSum))
 
     return None
 
